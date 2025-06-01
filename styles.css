@@ -704,7 +704,7 @@ h2 {
     color: var(--color-white);
 }
 
-/* Preformatted Text Styling */
+/* Preformatted Text Styling for Code */
 pre {
     background-color: var(--color-gray);
     padding: var(--spacing-base);
@@ -716,12 +716,13 @@ pre {
     max-width: 100%;
 }
 
-/* Code Styling */
+/* Inline Code Styling */
 code {
     font-family: 'Courier New', Courier, monospace;
-    background-color: var(--color-white);
-    padding: 0.3rem 0.5rem;
+    background-color: #f5f5f5;
+    padding: 2px 6px;
     border-radius: 4px;
+    color: #333;
 }
 
 /* Footer */
