@@ -86,7 +86,7 @@ const portfolioData = [
         id: 5,
         title: 'Real Estate Website',
         category: 'web',
-        image: 'https://images.pexels.com/photos/7173056/pexels-photo-7173056.jpeg',
+        image: 'https://www.freepik.com/free-photo/executive-manager-thanking-client-videocall-while-discussing-project-completion-laptop-arab-entrepreneur-folding-hands-while-greeting-customer-online-meeting-start-up-business-office_51218591.htm#fromView=search&page=2&position=37&uuid=57226451-931d-4a31-8178-f23a7ebce78e&query=real+estate+company+people',
         description: 'Luxury real estate platform with virtual tours and booking system.'
     },
     {
