@@ -199,5 +199,13 @@ newsletterForm.addEventListener('submit', (e) => {
     newsletterForm.reset();
 });
 
+// Toggle the answer visibility on click
+document.querySelectorAll('.question-card').forEach(card => {
+    card.addEventListener('click', () => {
+        const answer = card.querySelector('.question-answer');
+        answer.style.display = answer.style.display === 'block' ? 'none' : 'block';
+    });
+});
+
 // Update copyright year
 document.getElementById('currentYear').textContent = new Date().getFullYear();
