@@ -704,6 +704,26 @@ h2 {
     color: var(--color-white);
 }
 
+/* Preformatted Text Styling */
+pre {
+    background-color: var(--color-gray);
+    padding: var(--spacing-base);
+    border-radius: 8px;
+    font-size: 1rem;
+    color: var(--color-charcoal);
+    margin-top: var(--spacing-base);
+    overflow-x: auto;
+    max-width: 100%;
+}
+
+/* Code Styling */
+code {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: var(--color-white);
+    padding: 0.3rem 0.5rem;
+    border-radius: 4px;
+}
+
 /* Footer */
 .footer {
     background-color: var(--color-charcoal);
