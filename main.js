@@ -86,7 +86,7 @@ const portfolioData = [
         id: 5,
         title: 'Real Estate Website',
         category: 'web',
-        image: 'https://www.pexels.com/photo/people-with-real-estate-agent-on-porch-8469939/',
+        image: 'https://www.pexels.com/photo/people-with-real-estate-agent-on-porch-8469939/.jpeg',
         description: 'Luxury real estate platform with virtual tours and booking system.'
     },
     {
