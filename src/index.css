@@ -1,0 +1,95 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap');
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+  }
+  
+  body {
+    @apply bg-white text-charcoal font-sans;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-serif font-medium;
+  }
+
+  p {
+    @apply leading-relaxed;
+  }
+}
+
+@layer components {
+  .container-custom {
+    @apply w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+  
+  .section {
+    @apply py-16 md:py-24 lg:py-32;
+  }
+
+  .btn {
+    @apply inline-flex items-center justify-center px-6 py-3 rounded-none border-2 font-medium transition-all duration-300;
+  }
+
+  .btn-primary {
+    @apply btn bg-signature border-signature text-white hover:bg-transparent hover:text-signature;
+  }
+
+  .btn-secondary {
+    @apply btn bg-transparent border-signature text-signature hover:bg-signature hover:text-white;
+  }
+
+  .btn-ghost {
+    @apply btn bg-transparent border-transparent text-signature hover:text-white hover:bg-signature;
+  }
+
+  .card {
+    @apply bg-white p-6 md:p-8 shadow-md transition-all duration-300;
+  }
+
+  /* Input styles */
+  .form-input {
+    @apply w-full bg-transparent border-b-2 border-gray px-4 py-3 focus:border-signature focus:outline-none transition-all duration-300;
+  }
+}
+
+/* Animation classes */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.fade-in.appear {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Reveal animations with delay */
+.reveal-delay-1 { transition-delay: 0.1s; }
+.reveal-delay-2 { transition-delay: 0.2s; }
+.reveal-delay-3 { transition-delay: 0.3s; }
+.reveal-delay-4 { transition-delay: 0.4s; }
+
+/* Pulse animation for the navigation dot */
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(230, 57, 70, 0.4);
+  }
+  70% {
+    box-shadow: 0 0 0 10px rgba(230, 57, 70, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(230, 57, 70, 0);
+  }
+}
+
+.pulse {
+  animation: pulse 2s infinite;
+}
