@@ -1,17 +1,369 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Dustine Kibagendi - Brand Strategist & Design Consultant specializing in brand strategy, web design, and consulting for businesses seeking growth.">
     <title>Dustine Kibagendi | Brand Strategist & Design Consultant</title>
-    <!-- Preconnect to Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Pulse Navigation -->
+    <button aria-label="Navigation Menu" class="pulse-nav" id="pulseNav"></button>
+    <nav class="main-nav" id="mainNav">
+        <button aria-label="Close Navigation" class="close-nav" id="closeNav">×</button>
+        <ul>
+            <li><a href="#hero" class="nav-link">Home</a></li>
+            <li><a href="#about" class="nav-link">About</a></li>
+            <li><a href="#services" class="nav-link">Services</a></li>
+            <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+            <li><a href="#process" class="nav-link">Process</a></li>
+            <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="container">
+            <h1>
+                <span>Elevating Brands</span>
+                <span>with <span class="text-signature">Strategic Design</span></span>
+            </h1>
+            <p>I transform vision into powerful brand experiences that connect, convert, and captivate your audience.</p>
+            <div class="hero-buttons">
+                <a href="#contact" class="btn btn-primary">Start Your Brand Journey</a>
+                <a href="#portfolio" class="btn btn-ghost">View Portfolio</a>
+            </div>
+        </div>
+        <button class="scroll-indicator" aria-label="Scroll Down">
+            ↓
+        </button>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about section">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>Brand Strategist & <span class="text-signature">Design Consultant</span></h2>
+                    <p>With over a decade of experience transforming businesses through strategic design, I help brands find their voice and create experiences that resonate with their audience.</p>
+                    <p>My approach combines data-driven insights with creative excellence, delivering brand experiences that drive measurable business results.</p>
+                    
+                    <div class="skills">
+                        <h3>Expertise</h3>
+                        <div class="skill-bars">
+                            <div class="skill">
+                                <div class="skill-header">
+                                    <span>Brand Strategy</span>
+                                    <span>95%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-progress="95"></div>
+                                </div>
+                            </div>
+                            <div class="skill">
+                                <div class="skill-header">
+                                    <span>Web Design</span>
+                                    <span>90%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-progress="90"></div>
+                                </div>
+                            </div>
+                            <div class="skill">
+                                <div class="skill-header">
+                                    <span>Digital Marketing</span>
+                                    <span>85%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-progress="85"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <img src="https://images.pexels.com/photos/1036627/pexels-photo-1036627.jpeg" alt="Dustine Kibagendi" class="profile-image">
+                    <div class="experience-badge">
+                        <div class="number">10+</div>
+                        <div class="text">Years Experience</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services section">
+        <div class="container">
+            <h2>Strategic <span class="text-signature">Services</span></h2>
+            <p class="section-intro">Comprehensive solutions designed to transform your brand and drive business growth.</p>
+            
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <img src="https://api.iconify.design/lucide:palette.svg" alt="Brand Strategy Icon">
+                    </div>
+                    <h3>Brand Strategy</h3>
+                    <span class="service-tier">Premium</span>
+                    <p>Develop a comprehensive brand strategy that positions your business for growth.</p>
+                    <ul class="service-features">
+                        <li>Brand positioning</li>
+                        <li>Competitive analysis</li>
+                        <li>Target audience definition</li>
+                        <li>Visual identity development</li>
+                        <li>Brand messaging framework</li>
+                    </ul>
+                    <a href="#contact" class="btn btn-secondary">Learn More</a>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <img src="https://api.iconify.design/lucide:globe.svg" alt="Web Design Icon">
+                    </div>
+                    <h3>Web Design</h3>
+                    <span class="service-tier">Executive</span>
+                    <p>Create stunning, conversion-focused web experiences that captivate your audience.</p>
+                    <ul class="service-features">
+                        <li>User experience design</li>
+                        <li>Responsive development</li>
+                        <li>Performance optimization</li>
+                        <li>Conversion optimization</li>
+                        <li>Custom animations</li>
+                    </ul>
+                    <a href="#contact" class="btn btn-secondary">Learn More</a>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <img src="https://api.iconify.design/lucide:line-chart.svg" alt="Consulting Icon">
+                    </div>
+                    <h3>Consulting</h3>
+                    <span class="service-tier">Comprehensive</span>
+                    <p>Strategic guidance to help your business overcome challenges and capitalize on opportunities.</p>
+                    <ul class="service-features">
+                        <li>Growth strategy</li>
+                        <li>Digital transformation</li>
+                        <li>Marketing strategy</li>
+                        <li>Team training</li>
+                        <li>Strategic advisory</li>
+                    </ul>
+                    <a href="#contact" class="btn btn-secondary">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio section">
+        <div class="container">
+            <h2>Featured <span class="text-signature">Projects</span></h2>
+            <p class="section-intro">A selection of strategic brand and web projects that showcase my approach.</p>
+            
+            <div class="portfolio-filters">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="branding">Branding</button>
+                <button class="filter-btn" data-filter="web">Web Design</button>
+                <button class="filter-btn" data-filter="strategy">Strategy</button>
+            </div>
+
+            <div class="portfolio-grid">
+                <!-- Portfolio items will be dynamically populated via JavaScript -->
+            </div>
+
+            <div class="testimonials">
+                <h3>Client Testimonials</h3>
+                <div class="testimonial-grid">
+                    <blockquote class="testimonial">
+                        <p>"Dustine transformed our brand from generic to exceptional. Our conversion rate increased by 40% after implementing his strategy."</p>
+                        <footer>— Sarah Johnson, CEO at TechVision</footer>
+                    </blockquote>
+                    <blockquote class="testimonial">
+                        <p>"Working with Dustine was the best decision we made for our rebrand. His strategic approach delivered measurable results within months."</p>
+                        <footer>— Michael Chen, Marketing Director</footer>
+                    </blockquote>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section id="process" class="process section">
+        <div class="container">
+            <h2>My <span class="text-signature">Process</span></h2>
+            <p class="section-intro">A structured approach that ensures your project exceeds expectations.</p>
+            
+            <div class="process-timeline">
+                <div class="timeline-item">
+                    <div class="timeline-number">01</div>
+                    <div class="timeline-content">
+                        <h3>Discovery</h3>
+                        <p>In-depth analysis of your business, goals, and market landscape.</p>
+                        <span class="duration">1-2 weeks</span>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-number">02</div>
+                    <div class="timeline-content">
+                        <h3>Strategy Development</h3>
+                        <p>Creating a comprehensive strategy that addresses your challenges.</p>
+                        <span class="duration">2-3 weeks</span>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-number">03</div>
+                    <div class="timeline-content">
+                        <h3>Implementation</h3>
+                        <p>Executing the strategy through design and development.</p>
+                        <span class="duration">3-6 weeks</span>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-number">04</div>
+                    <div class="timeline-content">
+                        <h3>Optimization</h3>
+                        <p>Continuous improvement based on performance data.</p>
+                        <span class="duration">Ongoing</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section">
+        <div class="container">
+            <h2>Let's <span class="text-signature">Connect</span></h2>
+            <p class="section-intro">Ready to elevate your brand? Schedule a consultation or send me a message.</p>
+            
+            <div class="contact-grid">
+                <div class="contact-form">
+                    <h3>Send a Message</h3>
+                    <form id="contactForm">
+                        <div class="form-grid">
+                            <div class="form-group">
+                                <label for="name">Name</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                        </div>
+                        <div class="form-grid">
+                            <div class="form-group">
+                                <label for="phone">Phone (Optional)</label>
+                                <input type="tel" id="phone" name="phone">
+                            </div>
+                            <div class="form-group">
+                                <label for="company">Company (Optional)</label>
+                                <input type="text" id="company" name="company">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+
+                <div class="contact-info">
+                    <div class="booking-options">
+                        <h3>Book a Consultation</h3>
+                        <div class="booking-types">
+                            <!-- Booking options will be dynamically populated via JavaScript -->
+                        </div>
+                        <button class="btn btn-primary schedule-btn">
+                            <img src="https://api.iconify.design/lucide:calendar.svg" alt="Calendar">
+                            Schedule Now
+                        </button>
+                    </div>
+
+                    <div class="contact-details">
+                        <h3>Contact Information</h3>
+                        <div class="contact-item">
+                            <img src="https://api.iconify.design/lucide:mail.svg" alt="Email">
+                            <div>
+                                <h4>Email</h4>
+                                <a href="mailto:hello@dustinekibagendi.com">hello@dustinekibagendi.com</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <img src="https://api.iconify.design/lucide:phone.svg" alt="Phone">
+                            <div>
+                                <h4>Phone</h4>
+                                <a href="tel:+1234567890">+1 (234) 567-890</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <img src="https://api.iconify.design/lucide:map-pin.svg" alt="Location">
+                            <div>
+                                <h4>Location</h4>
+                                <p>San Francisco, CA</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="social-links">
+                        <h4>Connect on Social</h4>
+                        <div class="social-icons">
+                            <a href="#" aria-label="LinkedIn">
+                                <img src="https://api.iconify.design/lucide:linkedin.svg" alt="LinkedIn">
+                            </a>
+                            <a href="#" aria-label="Instagram">
+                                <img src="https://api.iconify.design/lucide:instagram.svg" alt="Instagram">
+                            </a>
+                            <a href="#" aria-label="Twitter">
+                                <img src="https://api.iconify.design/lucide:twitter.svg" alt="Twitter">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>Dustine <span class="text-signature">Kibagendi</span></h3>
+                    <p>Brand Strategist & Design Consultant</p>
+                </div>
+                
+                <nav class="footer-nav">
+                    <ul>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+
+                <div class="footer-subscribe">
+                    <form id="newsletterForm" class="newsletter-form">
+                        <input type="email" placeholder="Your email" required>
+                        <button type="submit" class="btn btn-primary">Subscribe</button>
+                    </form>
+                    <p>Join my newsletter for brand insights.</p>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; <span id="currentYear">2024</span> Dustine Kibagendi. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
 </html>
