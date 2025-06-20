@@ -54,8 +54,8 @@ h1, h2, h3, h4, h5, h6 {
     position: fixed;
     top: var(--spacing-base);
     left: var(--spacing-base);
-    width: 6px;
-    height: 6px;
+    width: 12px;
+    height: 12px;
     background-color: var(--color-signature);
     border: none;
     border-radius: 50%;
